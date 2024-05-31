@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: red;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 800px;
+}
+.wrapper .wrapper-left img{
+    width: 400px;
+    height: 480px;
+    border-radius: 30px;
+    box-shadow:5px 5px 10px 0 rgba(0,0,0,0.5);  
+    border: 3px solid red;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+
+    
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    border: 1px solid rgb(241,241,241);
+    border-radius: 12px;
+    padding: 10px 20px;
+    background: transparent;
+    backdrop-filter: blur(6px);
+    box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.5); 
+
+}
+.wrapper h2{
+    font-size: 30px;
+    color: #fffefe;
+    padding: 10px;
+    font-weight: lighter;
+    padding-bottom: 100px;
+
+}
+.wrapper p{
+    font-weight: bold;
+    color: whitesmoke;
+}
+.mb-3{
+    position: relative;
+    padding-bottom: 5px;
+}
+.mb-3 .form-label {
+    color: white;
+}
+
+.mb-3 input[type="text"]:not(:focus)::placeholder,
+.mb-3 input[type="email"]:not(:focus)::placeholder,
+.mb-3 input[type="password"]:not(:focus)::placeholder{
+    transform: translateY(0%);
+    transition: transform 0.2s ease-in-out;
+    font-size: 16px;
+    font-weight: 700;
+}
+a.forgot {
+    text-decoration: none;
+    position: relative;
+    color: rgb(255,255,255, 0.712);
+    transition: all 0.5s;
+}
+a.forgot:hover{
+    text-decoration: underline;
+    color:#fffffffd;
+}
+
+a.signUp{
+    text-decoration: none;
+    color: rgb(255,255,255, 0.712);
+    transition: all 0.5s;
+}
+a.signUp:hover{
+    text-decoration: underline;
+    color:#fffffffd;
+    padding-left: 5px;
+}
+
+.wrapper .logIn{
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 45px;
+    width: 200px;
+    height: 50px;
+
+}
+
+.mb-3 input[type="text"],
+.mb-3 input[type="email"],
+.mb-3 input[type="password"]{
+
+    border-radius: 10px;
+    background: transparent;
+    margin: 15px;
+    border: 2px solid rgb(255,255,255);
+    width: 280px;
+    height: 2px;
+    padding: 20px 40px 20px 20px;
+    backdrop-filter: blur(15px);
+}
+.mb-3 i{
+    position: absolute;
+    top: 40%;
+
+    transform: translateY(-50%);
+    right: 30px;
+    color: rgb(252,252,252);
+
+}
+
+input::placeholder{
+    color: rgb(255,255,255);
+}
+
+.mb-3 input[type="text"]:focus::placeholder,
+.mb-3 input[type="email"]:focus::placeholder,
+.mb-3 input[type="password"]:focus::placeholder{
+    transform: translateY(-75%);
+    transition: transform 0.2s ease-in-out;
+    font-size: 14px;
+}
+
+/* Sign Up */
+.wrapper .SignUp{
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 45px;
+    width: 200px;
+    height: 30px;
+
+}
+a.Login{
+    text-decoration: none;
+    color: rgb(255,255,255, 0.712);
+    transition: all 0.5s;
+}
+a.Login:hover{
+    text-decoration: underline;
+    color:#fffffffd;
+    padding-left: 5px;
+}
